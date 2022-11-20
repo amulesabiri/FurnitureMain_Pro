@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fog Furniture | Sign up</title>
+    <link rel="stylesheet" href="./css/login.css">
+    <script src="./jquery/jQuery v3.4.1.js"></script>
+</head>
+<body>
+    <section class="login-wrapper">
+        <div class="login-title">
+            <h1 id="signup-title">sign up</h1>
+        </div>
+        <div class="login-thumb-section" style="background: url('./imgs/wall1.jpg');background-position: center;background-size: cover;background-repeat: no-repeat;">
+            <nav class="login-thumb-nav">
+                <a class="login-thumb-nav-link" href="./index.html">home</a>
+                <a class="login-thumb-nav-link" href="./login.html">sign in</a>
+                <a class="login-thumb-nav-link" href="">privacy</a>
+                <a class="login-thumb-nav-link" href="">terms and condition</a>
+                <a class="login-thumb-nav-link" href="">FAQ</a>
+            </nav>
+        </div>
+
+        <div class="login-section" style="overflow-y: auto;overflow-x: hidden;">
+            <form action="" method="post">
+                <!-- <div class="heading">log in</div> -->
+                <span class="login-input"><input type="text" placeholder="First Name" name="firstname" id=""></span>
+                <span class="login-input"><input type="text" placeholder="Last Name" name="lastname" id=""></span>
+                
+                    <select class="login-input" name="gender" id="" style="outline: none;color: grey;padding-left: 10px; border: 1px solid rgba(128, 128, 128, 0.521)">
+                        <option value="">Male</option>
+                        <option value="">Female</option>
+                    </select>
+                <span class="login-input"><input style="border: 0px solid transparent;" type="date" placeholder="date of birth" name="" id=""></span>
+<!--                 <span style="width: 100%; display: flex;flex-direction: row;justify-content: space-between;margin-top: 20px;">
+                    <select name="" id="" style="height: 20px;outline: none; color: grey; background-color: lightgray;outline: none; border: 0px solid transparent;">
+                        <option value="">ug</option>
+                        <option value="">kyn</option>
+                    </select>
+                    <span style="display: inline-block;"><input style="height: 16px; outline: none; color: grey; width: 230px; border: 1px solid rgba(128, 128, 128, 0.521);padding-left: 20px;" type="text" placeholder="phone" name="" id=""></span>
+                </span> -->
+                <span class="login-input"><input type="email" placeholder="Email" name="email" id=""></span>
+
+                <span class="login-input">
+                    <input type="text" placeholder="Country" name="country" id="">
+                </span>
+
+                <span class="login-input">
+                    <input type="text" placeholder="City" name="city" id="">
+                </span>
+
+                <span class="login-input">
+                    <input type="password" placeholder="Password" name="password" id="">
+                </span>
+
+                <span class="login-input"><input type="password" placeholder="Confirm Password" name="confirmpassword" id=""></span>
+                
+                <button class="login-btn" type="submit" style="width: 100%;">sign up</button>
+                <!-- <a href="#" class="login-forgot">forgot password !</a> -->
+            </form>
+        </div>
+    </section>
+</body>
+<script src="./jquery/jQuery v3.4.1.js"></script>
+<script>
+    $('#signup-title').slideUp("slow").slideDown("slow");
+
+    setInterval($('#signup-title').slideUp("slow").slideDown("slow"),1000);
+</script>
+</html>
